@@ -1,0 +1,15 @@
+<h1><%= @user.username %></h1>
+
+<p>
+  <b>Username:</b>
+  <%=h @user.username %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @user.location %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
